@@ -1,16 +1,228 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Patricio Cea Charbin</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f6f8;
+      color: #222;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1100px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .sidebar {
+      width: 300px;
+      background: #1f2937;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .sidebar img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 20px;
+    }
+
+    .sidebar h1 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .sidebar p {
+      color: #d1d5db;
+      font-size: 15px;
+    }
+
+    .contact {
+      margin-top: 30px;
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .contact a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+
+    .main {
+      flex: 1;
+      padding: 40px;
+    }
+
+    nav {
+      margin-bottom: 30px;
+    }
+
+    nav button {
+      background: #e5e7eb;
+      border: none;
+      padding: 10px 16px;
+      margin-right: 8px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    nav button.active {
+      background: #1f2937;
+      color: white;
+    }
+
+    section {
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+      margin-top: 0;
+    }
+
+    .research-card {
+      background: #f9fafb;
+      padding: 18px;
+      border-radius: 10px;
+      margin-bottom: 16px;
+      border-left: 4px solid #1f2937;
+    }
+
+    .research-card h3 {
+      margin-top: 0;
+    }
+
+    @media (max-width: 800px) {
+      .container {
+        flex-direction: column;
+        margin: 0;
+        border-radius: 0;
+      }
+
+      .sidebar {
+        width: auto;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Patricio Cea Charbin</h1>
-  <p>Personal website</p>
+  <div class="container">
 
-  <h2>About</h2>
-  <p>Nothing to see yet.</p>
+    <aside class="sidebar">
+      <img src="profile.jpg" alt="Profile photo">
 
-  <h2>Contact</h2>
-  <p>Email: pceacharbin@ucsd.edu</p>
+      <h1>Patricio Cea Charbin</h1>
+      <p>PhD Candidate</p>
+      <p>University of California, San Diego / Department of Economics.</p>
+
+      <div class="contact">
+        <strong>Contact</strong><br>
+        Email: <a href="mailto:pceacharbin@ucsd.edu">pceacharbin@ucsd.edu</a><br>
+        CV: <a href="#">Download PDF</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <nav>
+        <button class="tab active" onclick="showSection('about')">About Me</button>
+        <button class="tab" onclick="showSection('research')">Research</button>
+        <button class="tab" onclick="showSection('publications')">Publications</button>
+        <button class="tab" onclick="showSection('teaching')">Teaching</button>
+      </nav>
+
+      <section id="about" class="active">
+        <h2>About Me</h2>
+        <p>
+          I am a PhD candidate interested in Political Economy
+        </p>
+
+        <p>
+          Before starting my PhD, I lived in Chile
+        </p>
+      </section>
+
+      <section id="research">
+        <h2>Research</h2>
+
+        <div class="research-card">
+          <h3>Research Area 1</h3>
+          <p>
+            Write a short description of your first research area here.
+          </p>
+        </div>
+
+        <div class="research-card">
+          <h3>Research Area 2</h3>
+          <p>
+            Write a short description of your second research area here.
+          </p>
+        </div>
+
+        <div class="research-card">
+          <h3>Research Area 3</h3>
+          <p>
+            Write a short description of your third research area here.
+          </p>
+        </div>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <p>Coming soon.</p>
+
+        <ul>
+          <li>
+            <strong>Paper Title.</strong> Author names. Journal/Conference, Year.
+          </li>
+        </ul>
+      </section>
+
+      <section id="teaching">
+        <h2>Teaching</h2>
+        <p>
+          Add courses you have taught, assisted with, or guest lectured in.
+        </p>
+
+        <ul>
+          <li>Course Name — Teaching Assistant, Year</li>
+          <li>Course Name — Guest Lecture, Year</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll("section");
+      const buttons = document.querySelectorAll(".tab");
+
+      sections.forEach(section => section.classList.remove("active"));
+      buttons.forEach(button => button.classList.remove("active"));
+
+      document.getElementById(sectionId).classList.add("active");
+      event.target.classList.add("active");
+    }
+  </script>
 </body>
 </html>
