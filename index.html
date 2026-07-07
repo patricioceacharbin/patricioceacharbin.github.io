@@ -42,12 +42,13 @@
 
     .sidebar h1 {
       font-size: 24px;
-      margin-bottom: 8px;
+      margin-bottom: 18px;
     }
 
     .sidebar p {
       color: #d1d5db;
       font-size: 15px;
+      margin: 6px 0;
     }
 
     .contact {
@@ -100,16 +101,12 @@
       margin-top: 0;
     }
 
-    .research-card {
-      background: #f9fafb;
-      padding: 18px;
-      border-radius: 10px;
-      margin-bottom: 16px;
-      border-left: 4px solid #1f2937;
+    h3 {
+      margin-top: 28px;
     }
 
-    .research-card h3 {
-      margin-top: 0;
+    li {
+      margin-bottom: 16px;
     }
 
     @media (max-width: 800px) {
@@ -133,8 +130,10 @@
       <img src="profile.jpg" alt="Profile photo">
 
       <h1>Patricio Cea Charbin</h1>
-      <p>PhD Candidate</p>
-      <p>University of California, San Diego / Department of Economics.</p>
+
+      <p>Ph.D. Candidate</p>
+      <p>Department of Economics</p>
+      <p>University of California, San Diego</p>
 
       <div class="contact">
         <strong>Contact</strong><br>
@@ -145,61 +144,58 @@
 
     <main class="main">
       <nav>
-        <button class="tab active" onclick="showSection('about')">About Me</button>
-        <button class="tab" onclick="showSection('research')">Research</button>
-        <button class="tab" onclick="showSection('publications')">Publications</button>
-        <button class="tab" onclick="showSection('teaching')">Teaching</button>
+        <button class="tab active" onclick="showSection('about', event)">About Me</button>
+        <button class="tab" onclick="showSection('research', event)">Research</button>
+        <button class="tab" onclick="showSection('teaching', event)">Teaching</button>
       </nav>
 
       <section id="about" class="active">
         <h2>About Me</h2>
+
         <p>
-          I am a PhD candidate interested in Political Economy
+          Thank you for visiting my website!
         </p>
 
         <p>
-          Before starting my PhD, I lived in Chile
+          I am a Ph.D. candidate in the Department of Economics at the University
+          of California, San Diego.
+        </p>
+
+        <p>
+          My research interests include [add your research interests here].
         </p>
       </section>
 
       <section id="research">
         <h2>Research</h2>
 
-        <div class="research-card">
-          <h3>Research Area 1</h3>
-          <p>
-            Write a short description of your first research area here.
-          </p>
-        </div>
+        <p>
+          Below are my current research projects and working papers.
+        </p>
 
-        <div class="research-card">
-          <h3>Research Area 2</h3>
-          <p>
-            Write a short description of your second research area here.
-          </p>
-        </div>
-
-        <div class="research-card">
-          <h3>Research Area 3</h3>
-          <p>
-            Write a short description of your third research area here.
-          </p>
-        </div>
-      </section>
-
-      <section id="publications">
-        <h2>Publications</h2>
-        <p>Coming soon.</p>
+        <h3>Working Papers</h3>
 
         <ul>
           <li>
-            <strong>Paper Title.</strong> Author names. Journal/Conference, Year.
+            <strong>Paper Title 1.</strong><br>
+            A short one- or two-sentence description of the project.
+          </li>
+
+          <li>
+            <strong>Paper Title 2.</strong><br>
+            A short one- or two-sentence description of the project.
+          </li>
+
+          <li>
+            <strong>Paper Title 3.</strong><br>
+            A short one- or two-sentence description of the project.
           </li>
         </ul>
       </section>
 
       <section id="teaching">
         <h2>Teaching</h2>
+
         <p>
           Add courses you have taught, assisted with, or guest lectured in.
         </p>
@@ -213,7 +209,7 @@
   </div>
 
   <script>
-    function showSection(sectionId) {
+    function showSection(sectionId, event) {
       const sections = document.querySelectorAll("section");
       const buttons = document.querySelectorAll(".tab");
 
