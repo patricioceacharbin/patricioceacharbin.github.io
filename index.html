@@ -68,6 +68,12 @@
       padding: 40px;
     }
 
+    .main p {
+      line-height: 1.7;
+      margin: 0 0 18px;
+      max-width: 720px;
+    }
+
     nav {
       margin-bottom: 30px;
     }
@@ -107,6 +113,101 @@
 
     li {
       margin-bottom: 16px;
+    }
+
+    .research-list {
+      padding-left: 20px;
+    }
+
+    .research-heading {
+      margin: 28px 0 14px;
+      color: #1f2937;
+      font-size: 20px;
+    }
+
+    .research-list li {
+      line-height: 1.6;
+      margin-bottom: 24px;
+      max-width: 760px;
+    }
+
+    .paper-meta {
+      color: #4b5563;
+    }
+
+    details.abstract {
+      margin-top: 10px;
+      max-width: 720px;
+    }
+
+    details.abstract summary {
+      color: #1f2937;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    details.abstract p {
+      margin-top: 10px;
+    }
+
+    .teaching-entry {
+      border-top: 1px solid #e5e7eb;
+      margin-top: 22px;
+      max-width: 760px;
+      padding-top: 18px;
+    }
+
+    .teaching-entry:first-of-type {
+      margin-top: 14px;
+    }
+
+    .teaching-section-heading {
+      margin-top: 34px;
+      margin-bottom: 6px;
+      max-width: 760px;
+    }
+
+    .teaching-intro {
+      font-size: 16px;
+      margin-bottom: 28px;
+    }
+
+    .teaching-entry h3 {
+      margin-top: 0;
+      margin-bottom: 4px;
+    }
+
+    .role-meta {
+      color: #4b5563;
+      font-weight: bold;
+    }
+
+    .teaching-list {
+      margin: 12px 0 0;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .teaching-list li {
+      border-left: 3px solid #e5e7eb;
+      line-height: 1.6;
+      margin-bottom: 14px;
+      max-width: 760px;
+      padding-left: 14px;
+    }
+
+    .document-list {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .document-list li {
+      border-left: 3px solid #e5e7eb;
+      line-height: 1.6;
+      margin-bottom: 12px;
+      max-width: 760px;
+      padding-left: 14px;
     }
 
     @media (max-width: 800px) {
@@ -158,51 +259,109 @@
 
         <p>
           I am a fifth-year Ph.D. candidate in the Department of Economics at the
-          University of California, San Diego. 
+          University of California, San Diego.
           I am an economist who works on applied real-world questions. I combine
           machine learning, text analysis, and systematic qualitative coding to
           create indicators and datasets that otherwise do not exist and impose
           analytical structure on ambiguous problems.
+        </p>
+
+        <p>
           At UC San Diego, my research won the Walter Heller Memorial Prize for 
           best third-year paper. I also passed my qualifying examination with "High
           Pass" distinction and was awarded the prestigious Dean Koenigsberger
           Fellowship.
+        </p>
+
+        <p>
           Before joining UC San Diego, I spent two and a half years at the
           Inter-American Development Bank in Washington, DC, conducting research
-          on macroeconomic and fiscal issues with policy relevance. 
+          on macroeconomic and fiscal issues with policy relevance.
+        </p>
+
+        <p>
           I am originally from Chile, and I hold a Master's in Economic Analysis 
           and a B.S. in Economics from the University of Chile. I completed both
           degrees with Maximum Distinction and with the highest performance 
           in my entering cohort.
-        </p>
-
-        <p>
-         
         </p>
       </section>
 
       <section id="research">
         <h2>Research</h2>
 
-        <p>
-        </p>
+        <h3 class="research-heading">Doctoral Research</h3>
 
-        <h3></h3>
-
-        <ul>
+        <ul class="research-list">
           <li>
-            <strong> </strong><br>
-            
+            <strong>Cleavages, Political Parties, and Polarization</strong>
+            <span class="paper-meta">(Job Market Paper, draft available).</span>
+
+            <details class="abstract">
+              <summary>Abstract</summary>
+              <p>
+                Why do some societies become more politically polarized and
+                susceptible to populism? In this paper, I explore the hypothesis
+                that these processes depend on how political parties respond to
+                recent drivers within patterns of political competition that
+                developed much earlier. Foundational political science theories
+                argued that the dimensions along which political parties compete
+                often originate in major conflicts that occurred in the period
+                leading up to the emergence of mass politics. The societal
+                divisions triggered by these conflicts became politically
+                organized and shaped the creation of the modern party system,
+                influencing political competition over the long run. I focus on
+                the Carlist Wars (1833-1876) in Spain as an example of such
+                conflicts and estimate their political effects using a novel
+                dataset spanning three centuries and an instrumental variable
+                exploiting variation in wartime logistical conditions. I find
+                that areas more exposed to the wars exhibit lower political
+                polarization today and weaker support for parties using populist
+                rhetoric. Evidence on mechanisms suggests that the Carlist Wars
+                helped form an additional axis of political competition that,
+                insofar as it does not overlap strongly with the left-right
+                divide, reduces incentives to intensify political polarization
+                and weakens the conditions populist leaders often exploit. The
+                findings remain after including a rich set of controls, and are
+                not explained by the leading alternative hypotheses. Violations
+                of the identification assumptions would need to account for over
+                60% of the reduced-form effect, while placebo tests provide no
+                evidence that the empirical strategy captures confounding
+                factors. The results shed light on the role of historically
+                rooted structures of political competition in shaping societies'
+                susceptibility to polarization and populism.
+              </p>
+            </details>
           </li>
 
           <li>
-            <strong></strong><br>
-            
+            <strong>Social Norms and Media Prejudice: How Legislation Restricting Minority Rights Affect Media Portrayal</strong>
+            <span class="paper-meta">(draft available).</span>
           </li>
 
           <li>
-            <strong></strong><br>
-            
+            <strong>Property and Political Control: Evidence from Chile's Agrarian Counter-Reform</strong>
+            <span class="paper-meta">(preliminary draft available).</span>
+          </li>
+
+          <li>
+            <strong>Approaches of land-restoration and ethnic conflict</strong>
+            <span class="paper-meta">(preliminary draft available; further analysis in progress).</span>
+          </li>
+        </ul>
+
+        <h3 class="research-heading">Pre-Doctoral Research</h3>
+
+        <ul class="research-list">
+
+          <li>
+            <strong>Social Capital, Modernization and Meritocracy in an Unequal Society: Long-Term Evidence of Class-Based Labor Discrimination in Chile</strong>
+            <span class="paper-meta">(draft available; joint with Javier N&uacute;&ntilde;ez and Pedro Leiva).</span>
+          </li>
+
+          <li>
+            <strong>Merit, Gender and Class: Long-Term Evidence on Wage Discrimination on a Modernizing Economy</strong>
+            <span class="paper-meta">(draft available; joint with Javier N&uacute;&ntilde;ez and Pedro Leiva).</span>
           </li>
         </ul>
       </section>
@@ -210,13 +369,65 @@
       <section id="teaching">
         <h2>Teaching</h2>
 
-        <p>
-          
+        <p class="teaching-intro">
+          I have over seven years of teaching experience across undergraduate and
+          graduate courses. In my teaching, I emphasize conceptual understanding,
+          clear explanations of complex ideas, and learning beyond memorizing
+          procedures for an exam. I also work to create a comfortable classroom
+          environment where students feel included, supported, and willing to
+          participate.
         </p>
 
-        <ul>
-          <li></li>
-          <li></li>
+        <h3 class="teaching-section-heading">Teaching Experience</h3>
+
+        <div class="teaching-entry">
+          <h3>University of California, San Diego</h3>
+          <p class="role-meta">La Jolla, CA</p>
+          <ul class="teaching-list">
+            <li>
+              <strong>Teaching Assistant:</strong> Econometrics A.
+            </li>
+            <li>
+              <strong>Instructor:</strong> Spanish B.
+            </li>
+          </ul>
+        </div>
+
+        <div class="teaching-entry">
+          <h3>University of Chile</h3>
+          <p class="role-meta">Santiago, Chile</p>
+          <ul class="teaching-list">
+            <li>
+              <strong>Teaching Assistant, undergraduate courses:</strong>
+              Introduction to Macroeconomics, Introduction to Statistics,
+              Introduction to Finance, Political Economy, Econometrics I, and
+              Stata Workshop.
+            </li>
+            <li>
+              <strong>Teaching Assistant, graduate courses:</strong>
+              Macroeconomics in Small and Open Economies, Economic Growth,
+              Integration and Technological Development, Microeconomics Leveling,
+              Applied Microeconomics (Master's in Economic Analysis), Labor
+              Markets and Pension Systems (Master's in Public Policy), and
+              Microeconomics (MBA).
+            </li>
+          </ul>
+        </div>
+
+        <h3 class="teaching-section-heading">Selected UC San Diego Evaluations</h3>
+        <ul class="document-list">
+          <li>
+            <strong>Spanish B:</strong>
+            <a href="teaching-evaluations/spanish-b-student-comments-wi25.pdf">student comments</a>.
+          </li>
+          <li>
+            <strong>Econometrics A:</strong> instructor evaluations:
+            <a href="teaching-evaluations/econ-120a-instructor-evaluation-fa23.pdf">Fall 2023</a>,
+            <a href="teaching-evaluations/econ-120a-instructor-evaluation-sp25.pdf">Spring 2025</a>,
+            <a href="teaching-evaluations/econ-120a-instructor-evaluation-s125.pdf">Summer 2025</a>,
+            <a href="teaching-evaluations/econ-120a-instructor-evaluation-fa25.pdf">Fall 2025</a>,
+            <a href="teaching-evaluations/econ-120a-instructor-evaluation-sp26.pdf">Spring 2026</a>.
+          </li>
         </ul>
       </section>
     </main>
